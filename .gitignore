@@ -1,1 +1,8 @@
+.next
+node_modules
+out
+*.db
+*.db-shm
+*.db-wal
 .vercel
+.env*

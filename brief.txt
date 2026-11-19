@@ -1,0 +1,11 @@
+Project: "Care Budget" - independent demo inspired by the problem space of Cova (YC S26), financial infrastructure for family caregiving. NOT affiliated; footer says so.
+
+Concept: a caregiving-finance board for one fictional family ("the Demo family") coordinating care for a parent:
+- Monthly expense ledger: ~10 synthetic line items across categories (caregiver hours, medical supplies, transport, home modifications, medications), each with payer (which family member), status (paid, pending reimbursement, planned).
+- Offsets panel: synthetic insurance reimbursement and a state caregiving stipend, clearly labeled illustrative, reducing net cost.
+- Deterministic monthly summary: gross spend, offsets, net out-of-pocket, and per-person split across 3 fictional family members based on editable share percentages.
+- 12-month projection strip: net cost projected forward with an editable monthly cost-growth slider; shows cumulative family spend at months 3, 6, 12. All arithmetic deterministic and visible.
+- Attention flags with fixed visible thresholds: OVER BUDGET (net exceeds the family's stated monthly budget, editable), REIMBURSEMENT WAITING (pending >30 days in the synthetic timeline).
+Honesty bar: header badge "Sample data - demo"; copy states every person, expense and benefit is synthetic and the math is fixed-formula illustration, not financial advice; footer: "Independent demo built by Vinil Polepalli. Not affiliated with or endorsed by Cova."
+UI: dark sleek, distinct accent RED (#ef4444 - clearly red, not rose/orange/amber).
+Tech: Next.js static export (output:'export'), npm run build must pass, no runtime external calls. Write SPEC.md first, then slices. No git commit, no deploy.

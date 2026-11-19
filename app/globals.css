@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { background: #fcfcfd; color: #18181b; -webkit-text-size-adjust: 100%; }
+  body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-variant-numeric: tabular-nums; }
+  :focus-visible { outline: 2px solid #be185d; outline-offset: 2px; }
+}
+
+@layer components {
+  .card { @apply rounded-card border border-hair bg-white; }
+  .label { @apply text-[11px] font-semibold uppercase tracking-wider text-ink-faint; font-variant-caps: all-small-caps; font-size: 13px; text-transform: none; letter-spacing: 0.06em; }
+  .num { @apply font-mono tabular-nums; }
+  .field { @apply w-full rounded-field border border-hair bg-white px-2.5 py-2 text-sm text-ink; }
+  .btn { @apply inline-flex items-center justify-center rounded-btn border border-hair bg-white px-3 py-2 text-sm font-medium text-ink hover:bg-zinc-50 disabled:opacity-50; }
+  .btn-primary { @apply rounded-btn border border-brand bg-brand px-3 py-2 text-sm font-medium text-white hover:bg-brand-hover hover:border-brand-hover disabled:opacity-50; }
+  .chip { @apply inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-medium; } /* unslop-ignore: pills only for status chips, per spec */
+}
